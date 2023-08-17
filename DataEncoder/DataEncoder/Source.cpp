@@ -3,11 +3,11 @@
 #include <opencv2/core/mat.hpp>
 #include "iostream"
 
-
+#include "Manager.h"
 #include "Header.h"
 
-int showImage() {
-	std::string path = "test.png";
+int testing() {
+	std::string path = "592553.jpg";
 	cv::Mat img = cv::imread(path);
 	
 	//testing - get color in specipic point
@@ -24,6 +24,15 @@ int showImage() {
 }
 
 
-int main(int, char**) {
-	showImage();
+int main(int, char**) 
+{
+	testing();
+	unsigned long int count;
+
+	Manager* mg = new Manager();
+
+	//count = mg->ReadFile("test_file.rar");
+
+
+	//mg->Decode("out_file.png",count);
 }

@@ -9,12 +9,15 @@
 #include <string>
 #include <string.h>
 #include <vector>
+#include <fstream>
+#include <iterator>
 
 
 
 using std::cin;
 using std::cout;
 using std::endl;
+using std::string;
 using std::vector;
 using cv::Point;
 using cv::Vec3b;
