@@ -48,13 +48,13 @@ void Image::setPixle(Vec3b color)
 	}
 }
 
-void Image::exportImage()
+/*
+	The function save the image in the given path
+	Input: path to save the image to
+	Output: none
+*/
+void Image::exportImage(string path)
 {
-	/*//convert to rgb
-	cout << this->_img.at<Vec3b>(0, 0) << endl;
-	cout << this->_img.at<Vec3b>(0, 1) << endl;*/
-
-
 	//crop the image and save
-	cv::imwrite("out_file.png", this->_img(cv::Range(0, this->_point.y + 1), cv::Range(0, this->_width)));
+	cv::imwrite(path, this->_img(cv::Range(0, this->_point.y + 1), cv::Range(0, this->_width)));
 }

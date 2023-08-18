@@ -6,9 +6,8 @@
 class Manager
 {
 	private:	
-		int _bit;
+		int _pixelCount;
 		
-
 
 	public:
 		Manager();

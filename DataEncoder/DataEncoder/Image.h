@@ -15,7 +15,7 @@ class Image
 
 		Vec3b getPixle(Point point);
 		void setPixle(Vec3b color);
-		void exportImage();
+		void exportImage(string path);
 
 };
 

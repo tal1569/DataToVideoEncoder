@@ -6,7 +6,8 @@
 #include "Manager.h"
 #include "Header.h"
 
-int testing() {
+int testing() 
+{
 	std::string path = "592553.jpg";
 	cv::Mat img = cv::imread(path);
 	
@@ -26,13 +27,13 @@ int testing() {
 
 int main(int, char**) 
 {
-	testing();
+	//testing();
 	unsigned long int count;
 
 	Manager* mg = new Manager();
 
-	//count = mg->ReadFile("test_file.rar");
+	count = mg->ReadFile("test_file.rar");
 
 
-	//mg->Decode("out_file.png",count);
+	mg->Decode("out_file.png",count);
 }
