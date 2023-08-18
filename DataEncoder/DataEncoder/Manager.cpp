@@ -16,6 +16,7 @@ unsigned long int Manager::ReadFile(string path)
 	int i;
 	//Image img = Image(1080,1920);		//full hd
 	Image img = Image(2160, 3840);		//4k
+
 	std::ifstream input(path, std::ios::binary);
 
 	// copies all data into buffer
