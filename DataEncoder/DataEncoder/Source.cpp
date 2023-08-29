@@ -32,8 +32,10 @@ int main(int, char**)
 
 	Manager* mg = new Manager();
 
-	count = mg->ReadFile("test_file.rar");
+	//mg->testing();
 
+	//count = mg->ReadFile("test_file.rar");
 
-	mg->Decode("out_file.png",count);
+	count = 0;
+	mg->Decode("./Output/out_file.png",count);
 }

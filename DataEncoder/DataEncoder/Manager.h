@@ -13,8 +13,9 @@ class Manager
 		Manager();
 		~Manager();
 
-		unsigned long int ReadFile(string path);
-		void Decode(string path, unsigned long int count);
+		unsigned long long int ReadFile(string path);
+		void Decode(string path, unsigned long long int count);
+		void testing();
 
 };
 
